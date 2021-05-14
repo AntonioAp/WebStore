@@ -39,6 +39,7 @@ fetch(`https://fakestoreapi.com/products/categories`)
         getCategory(event.target.value)
         })
 
+
      document.getElementById("togglePrice").addEventListener("click",(e)=>{
       let btnPrice =  document.getElementById("togglePrice").innerHTML 
         if(btnPrice == 'Precio ascendente'){
@@ -49,3 +50,41 @@ fetch(`https://fakestoreapi.com/products/categories`)
         })
         
         
+
+        
+        fetch(`https://fakestoreapi.com/products`)
+.then(res=>res.json())
+.then(data=>{data.map((x)=>console.log(x.id))})
+//let btn =  document.createElement("button")
+
+
+document.getElementById("abc").addEventListener("click",(x)=>{
+    
+    if(document.getElementById("abc").innerText=="A al Z"){document.getElementById("abc").innerText="Z al A"}
+else{document.getElementById("abc").innerText="A al Z"}
+}
+)
+
+                /*fetch(`https://fakestoreapi.com/products/${num}`) 
+                        .then(res=>res.json())//se convierte el objeto json
+                        .then(data=>{ 
+                            data.map(producto =>{//devuelve todo el objeto
+                                let sect = document.createElement("section");
+                                let parr= document.createElement("p");
+                                let imagen = document.createElement("img");
+                                let txt = document.createTextNode(producto.title);
+                                parr.appendChild(txt);
+                                imagen.setAttribute("src",producto.image);
+                                document.querySelector(".container").appendChild(sect);
+                                sect.appendChild(imagen);
+                                sect.appendChild(parr);
+                                //imagen.style=("width:200px");
+                                })
+                        })      */    
+            
+        
+            document.getElementById("seleccion").addEventListener("change",(event)=>{
+                getCategory(event.target.value)
+                })
+                
+
