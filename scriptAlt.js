@@ -1,4 +1,4 @@
-/* 
+ 
 let arraySelect=//crea el select con las opciones
 fetch(`https://fakestoreapi.com/products/categories`)
     .then(res=>res.json())
@@ -34,7 +34,7 @@ fetch(`https://fakestoreapi.com/products/categories`)
                         })
                 })          
     }
- */
+ 
     document.getElementById("seleccion").addEventListener("change",(event)=>{
         getCategory(event.target.value)
         })
@@ -80,7 +80,7 @@ else{document.getElementById("abc").innerText="A al Z"}
                                 sect.appendChild(parr);
                                 //imagen.style=("width:200px");
                                 })
-                        })      */    
+                        })  */        
             
         
             document.getElementById("seleccion").addEventListener("change",(event)=>{

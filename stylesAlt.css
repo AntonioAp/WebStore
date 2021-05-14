@@ -60,7 +60,15 @@ section{
     box-shadow: 5px 5px 18px 5px gray;
 }
 
+#togglePrice{
+    border-radius: 15px;
+    margin: 10px;
 
+}
+#abc{
+    border-radius: 15px;
+    margin: 10px;
+}
 
 
 /* PORTRAIT tablets AND LARGE PHONES*/
