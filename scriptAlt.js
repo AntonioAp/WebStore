@@ -1,4 +1,4 @@
-
+/* 
 let arraySelect=//crea el select con las opciones
 fetch(`https://fakestoreapi.com/products/categories`)
     .then(res=>res.json())
@@ -34,10 +34,23 @@ fetch(`https://fakestoreapi.com/products/categories`)
                         })
                 })          
     }
-
+ */
     document.getElementById("seleccion").addEventListener("change",(event)=>{
         getCategory(event.target.value)
         })
+
+
+     document.getElementById("togglePrice").addEventListener("click",(e)=>{
+      let btnPrice =  document.getElementById("togglePrice").innerHTML 
+        if(btnPrice == 'Precio ascendente'){
+            document.getElementById("togglePrice").innerHTML = 'Precio descendente'  
+           }else{
+               document.getElementById("togglePrice").innerHTML = 'Precio ascendente' 
+           }
+        })
+        
+        
+
         
         fetch(`https://fakestoreapi.com/products`)
 .then(res=>res.json())
@@ -74,3 +87,4 @@ else{document.getElementById("abc").innerText="A al Z"}
                 getCategory(event.target.value)
                 })
                 
+
